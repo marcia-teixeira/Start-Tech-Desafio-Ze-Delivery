@@ -46,7 +46,7 @@ Ferramentas utilizadas:
 
 >###### Exemplo:
 ```js
-$ git clone https://github.com/raquelcassia/zedelivery-challenge.git
+$ git clone https://github.com/marcia-teixeira/Start-Tech-Desafio-Ze-Delivery.git
 ```
 
 - Através de um terminal, navegue até o diretório do projeto e instale as dependências npm com o comando:
