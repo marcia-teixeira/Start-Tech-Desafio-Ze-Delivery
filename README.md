@@ -38,6 +38,24 @@ Ferramentas utilizadas:
 + cypress
 + postman
 + jmeter
+
+### Instalação
+
+>######  Clonar projeto
+- Clonar este repositório usando _ssh_ ou _https_.
+
+>###### Exemplo:
+```js
+$ git clone https://github.com/raquelcassia/zedelivery-challenge.git
+```
+
+- Através de um terminal, navegue até o diretório do projeto e instale as dependências npm com o comando:
+
+```js
+$ npm install
+```
+-----------------------
+
 ---
 # 🚩 *O desafio*
 
