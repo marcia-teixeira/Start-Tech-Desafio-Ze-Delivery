@@ -1,39 +1,22 @@
 
 
 
-const ze = require('./elements').ELEMENTS;
+export const ELEMENTS = {
 
-class buscaZe {
-    acessarsite(){
-         cy.visit(ze.url) 
-      }
+
+    url:'https://www.ze.delivery/',
+    login:'#welcome-button-sign-in',
+    cookies:'#onetrust-accept-btn-handler',
+    preencherEmail:'#login-mail-input-email',
+    preencherSenha:'#login-mail-input-password',
+    entrarConta: '#login-mail-button-sign-in',
+    confimarIdade:'#age-gate-button-yes',
+    barradeBusca: '#search-product-input',
+    entrarProduto: '.css-kzmtws-productCard',
+    nomeProduto: '.css-aibq80-productTitle',
+    preçoProduto: '.css-1jqrnd2-priceText',
     
-    acessarLogin(){
-         cy.get(ze.login).click()
-         cy.get(ze.cookies).click()        
-      }
 
-    preencherDados(){
-         cy.get(ze.preencherEmail).type("testeQA@hotmail.com")
-         cy.get(ze.preencherSenha).type("Qa-30111998")
-         cy.get(ze.entrarConta).click() 
-      }
-
-    guiaBuscar(){
-         cy.get(ze.confimarIdade).click()
-         cy.get(ze.barradeBusca).type("Skol 269ml")
-         cy.get(ze.entrarProduto).click({ force: true })
-      }
-
-    validarNomeePreço(){
-         cy.get(ze.nomeProduto)
-           .and('contain', 'Skol 269ml')
-         cy.get(ze.preçoProduto,{timeout: 60000}).should('be.visible')
-           .and('contain' , '2,19')
-      }
-    
 
 
 }
-
-export default new buscaZe();
